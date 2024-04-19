@@ -24,13 +24,13 @@ export default function PokemonCard({key, id, name, image, types}) {
         color = 'gray';
         break;
       case 'rock':
-        color = 'navy';
+        color = '#0000ff';
         break;
       case 'bug':
         color = 'fuchsia';
         break;
       case 'ghost':
-        color = 'black';
+        color = '#5c5c8a';
         break;
       case 'steel':
         color = 'silver';
@@ -81,7 +81,7 @@ export default function PokemonCard({key, id, name, image, types}) {
         <div className='text-center px-5 text-sm font-normal'>{id} - {name.charAt(0).toUpperCase() + name.slice(1)}</div>
         <div className="w-full bg-purple-500 flex flex-row justify-around p-1">
           {types.map((item) => {
-            return <label className="text-sm rounded-md p-1" style={{backgroundColor: getColor(item.type.name)}}>{item.type.name.charAt(0).toUpperCase() + item.type.name.slice(1)}</label>
+            return <label className="text-sm rounded-md p-1" style={{backgroundColor: getColor(item.type.name), color: 'white'}}>{item.type.name.charAt(0).toUpperCase() + item.type.name.slice(1)}</label>
           })}
         </div>
       </div>

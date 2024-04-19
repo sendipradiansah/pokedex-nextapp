@@ -12,7 +12,7 @@ export default function PokemonList({ pokemonData }) {
         (pokemon) => pokemon.name.toLowerCase().includes(searchText.toLowerCase())
       )
     }
-
+  
     const filteredPokemonData = searchFilter(listPoke);
 
     useEffect(() => {
