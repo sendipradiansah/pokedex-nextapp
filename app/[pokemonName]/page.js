@@ -27,8 +27,8 @@ const handleMouseLeave = (e) => {
   return (
     <div className="flex flex-col px-24 py-20">
       <div className="flex flex-row mb-12 mx-auto items-center gap-5">
-      <SiPokemon size={70} style={{color: 'orange'}}/>
-        <label style={{fontSize: '30px', fontWeight:800, color: 'gray', fontFamily: 'Brush Script MT'}}>{pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</label>
+      <SiPokemon size={150} style={{color: 'orange'}}/>
+        <label style={{fontSize: '50px', fontWeight:800, color: 'gray', fontFamily: 'Brush Script MT'}}>{pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</label>
       </div>
       <div className="w-full items-center">
         <div className="w-3/4 flex flex-row m-auto items-center justify-around bg-orange-400 px-5 gap-10 rounded-xl">
@@ -53,7 +53,7 @@ const handleMouseLeave = (e) => {
                 <CgPokemon style={{color: 'black'}} size={30}/>
               </div>
               <div className="w-4/5 mx-auto flex flex-col gap-y-2">
-                <div className="bg-white p-3 text-center bg-gray-200"><h3>Evolution Pokemon</h3></div>
+                <div className="bg-white p-3 text-center bg-gray-400"><h3>Evolution Pokemon</h3></div>
                 <div className="bg-white text-center flex flex-row justify-around">
                   <div className="w-full grid grid-rows-1 bg-gray-200">
                       <table>

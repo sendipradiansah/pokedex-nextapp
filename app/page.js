@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="w-full mb-12">
-        <div className="ml-20 mb-2"><SiPokemon size={150}/></div>
+        <div className="ml-20 mb-5"><SiPokemon size={150}/></div>
         <PokemonList pokemonData={pokemonData}/>
       </div>
     </main>
