@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Links from 'next/link';
 
 export default function PokemonCard({key, id, name, image, types}) {
-  const[color, setColor] = useState("");
+  // const[color, setColor] = useState("");
 
   const getColor = (name) => {
     let color = '';
